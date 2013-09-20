@@ -11,7 +11,7 @@ module PanoramioRb
     :size => :medium, # Cant be :original, :medium (default value), :small, :thumbnail, :square, :mini_square
     :from => 0,
     :to => 20,
-    :mapfilter => true
+    :mapfilter => false
   }
   
   def self.get_panoramas(options = {})
