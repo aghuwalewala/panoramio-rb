@@ -26,7 +26,7 @@ module PanoramioRb
     end
   end
 
-  def self.get_panoramas_from_point(point, radius = 10, unit = :mi, options = {})
+  def self.get_panoramas_from_point(point, radius = 0.05, unit = :mi, options = {})
     points = Geocoder::Calculations.bounding_box(point, radius, { :unit => unit })
     options.merge!({
       :miny => points[0],
