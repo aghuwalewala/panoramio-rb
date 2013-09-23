@@ -7,7 +7,7 @@ require 'geocoder/calculations'
 module PanoramioRb
   URL = 'http://www.panoramio.com/map/get_panoramas.php'
   DEFAULT_OPTIONS = {
-    :set => :public,  # Cant be :public, :full, or a USER ID number
+    :set => :full,  # Cant be :public, :full, or a USER ID number
     :size => :medium, # Cant be :original, :medium (default value), :small, :thumbnail, :square, :mini_square
     :from => 0,
     :to => 20,
